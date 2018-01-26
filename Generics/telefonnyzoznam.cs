@@ -12,7 +12,15 @@ namespace Generics
 
         public void Addstudent(student s)
         {
-            zoznam.Add(s.tcislo, s);
+            try
+            {
+                zoznam.Add(s.tcislo, s);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.ToString()); // odchytenie  vinimky v pripade ze sa nepodari pridat kluc do dictionary ... napr duplicitny kluc 
+            }
+            
         }
         public bool Find(string tcislo, out student s)
         {

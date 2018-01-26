@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="genericssmallstack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="smallstack.cs" />
     <Compile Include="student.cs" />
     <Compile Include="telefonnyzoznam.cs" />
   </ItemGroup>

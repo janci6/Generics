@@ -17,6 +17,8 @@ namespace Generics
 
             telefonnyzoznam.Addstudent(new student { tcislo = "84984939383", meno = "igor", });
 
+            telefonnyzoznam.Addstudent(new student { tcislo = "84984939393", meno = "ferenc", });
+
             student s = new student();
             if(telefonnyzoznam.Find("84984939393", out s))
             {
@@ -33,6 +35,8 @@ namespace Generics
             {
                 Console.WriteLine("zaznam neexistuje");
             }
+            genericssmallstack<String> stringsmallstack = new genericssmallstack<string>();
+            stringsmallstack.Pop();
 
             Console.ReadLine();
 
