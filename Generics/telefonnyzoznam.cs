@@ -14,5 +14,9 @@ namespace Generics
         {
             zoznam.Add(s.tcislo, s);
         }
+        public bool Find(string tcislo, out student s)
+        {
+            return zoznam.TryGetValue(tcislo, out s);
+        }
     }
 }
