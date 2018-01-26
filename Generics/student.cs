@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    class Program
+    class student
     {
-        static void Main(string[] args)
-        {
-
-        }
+        public string meno;
+        public string tcislo;
     }
 }
